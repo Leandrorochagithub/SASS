@@ -1,0 +1,29 @@
+/*.class1 ul{
+    background-color: red;
+}
+.class1 li{
+    background-color: aquamarine;
+}*/
+/*Using Nesting / Usando Nesting*/
+.class1{
+    ul{
+        background-color: red;
+    }
+    li{
+        background-color: aquamarine;
+        padding: 10px 15px; /*10px top and bottom and 15px sides / 10px para cima e baixo e 15px para os lados*/
+        /*Thus, it's easier to change many li at the same time / Assim, é mais fácil mudar muitas li ao mesmo tempo*/
+    }
+    button{
+        background-color: orange;
+        cursor: pointer;
+        border-radius: 10px;
+        border-style: dashed;
+
+        &:hover{ /*& to use Hover element*/
+            background-color: red;
+            color:azure;
+            transition: 2s;
+        }
+        }
+    }

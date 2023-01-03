@@ -1,0 +1,15 @@
+/* MIXIN it's to create a mix of configuration elements, facilitating the customization / 
+é para criar um mix de config. de elementos, facilitando a customização*/
+@mixin textStyle ($color, $font-size, $font-family){ 
+    color: $color;
+    font-size: $font-size;
+    font-family: $font-family;
+}
+.text{
+    h1 { @include textStyle(#f15, 35px, arial)
+    }
+    p {
+        @include textStyle(#f50, 70px, arial)
+    }      
+}
+

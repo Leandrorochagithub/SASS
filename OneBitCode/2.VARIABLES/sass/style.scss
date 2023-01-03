@@ -1,0 +1,11 @@
+$btn-color: #f99; /*$ TO INDICATE THE VARIABLE*/
+$width: 75px;
+
+.btn1{
+    width: $width;
+    background-color: $btn-color;
+}
+.btn2{
+    width: $width;
+    background-color: $btn-color;
+}

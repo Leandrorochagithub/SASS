@@ -1,0 +1,29 @@
+@charset "UTF-8";
+.btn, .btn-blue {
+  width: 125px;
+  padding: 10px 0px;
+  /*10px top and bottom, 0px insides / 10px em cima e embaixo, 0px dos lados*/
+  border-radius: 20px;
+  /*round off the edges (once px round the 4 borders) / Para arredondar as bordas ( um comando px arredonda todas as bordas*/
+  display: block;
+  /*Put in vertical*/
+  margin-top: 10px;
+  /*Distance out of button / distância fora do botão*/
+  /*The .btn is included in BTN-colors in each class, because the class is (btn btn-color), without btn before the .btn is not applied / O .btn é incluído em BTN-colors em cada classe, porque a classe é (btn btn-color), sem btn antes o .btn não é aplicado*/
+}
+.btn.btn-purple, .btn-purple.btn-blue {
+  /*& apply the heritage / & aplica a herança*/
+  background-color: purple;
+  color: white;
+}
+.btn.btn-yellow, .btn-yellow.btn-blue {
+  background-color: yellow;
+}
+
+.btn-blue {
+  /*@extend apply .btn*/
+  background-color: blue;
+  color: white;
+}
+
+/*# sourceMappingURL=style.css.map */
